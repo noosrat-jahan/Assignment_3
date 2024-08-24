@@ -27,7 +27,9 @@
         }
       </script>
       <style>
-        
+        *{
+            border: 1px solid red;
+        }
         .font_manrope{
             font-family: "Manrope", sans-serif;
         }
@@ -42,31 +44,39 @@
             background-color: rgba(255, 255, 255, 0.3);
             background-blend-mode: overlay;
         }
+        .team_bg{
+            background-image: url('assets/Barnhome-Twilight-Exterior.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.708);
+            background-blend-mode: overlay;
+        }
       </style>
 </head>
-<body class="font_manrope">
+<body class="font_manrope overflow-x-hidden w-full">
     <header class="  mx-auto header_gradient">
         <section class="w-[90%] mx-auto pt-6">
             <!-- navbar design -->
             <nav>
-                <div class="navbar">
-                    <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-up-long rotate-45 bg-[#ABEF5F] rounded-full px-3.5 py-3"></i>
-                    <a class=" text-3xl text-black font-extrabold ml-4" href="">Rinterio</a>
-                    <div class="dropdown ml-32">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <i class="fa-solid fa-bars text-2xl text-[#737373] border border-[#E9E9E9] px-3 py-1.5 rounded-full bg-white"></i>
-                        </div>
-                        <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a class="font-extrabold">Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>   
-                        </ul>
-                    </div>                  
+                <div class="navbar ">
+                    <div class="navbar-start ">
+                        <i class="fa-solid fa-arrow-up-long rotate-45 bg-[#ABEF5F] rounded-full px-3.5 py-3"></i>
+                        <a class=" text-3xl text-black font-extrabold ml-4" href="">Rinterio</a>
+                        <div class="dropdown ml-32">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars text-2xl text-[#737373] border border-[#E9E9E9] px-3 py-1.5 rounded-full bg-white"></i>
+                            </div>
+                            <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li><a class="font-extrabold">Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>   
+                            </ul>
+                        </div>                  
                     </div>
                     <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -246,7 +256,7 @@
                 <h1 class="text-4xl text-black font-[900] text-center">Read Our Articles and News</h1>          
                 <p class="lg:w-3/5 text-sm text-center font-[600] text-[#494949]">Discover inspiring project highlights, design tips, and the latest trends that showcase how we’re redefining barn house living. Stay informed and inspired with our fresh content that celebrates the fusion of tradition and innovation.
                 </p>       
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center mb-10">
                     <div class="bg-white p-6 rounded-2xl space-y-3">
                         <img src="assets/article1.png" alt="" class="mb-6">
                         <div class="flex items-center gap-3">
@@ -289,6 +299,63 @@
                 </div>
             </div>
          </section>  
+
+    <!-- An Unique section design of this website -->
+    <section class="w-full mx-auto bg-[#f4f4f4] ">
+        <div class="w-[90%] mx-auto  pt-0 ">                
+            <div class="team_bg py-10 mb-10 flex flex-col items-center justify-center gap-6 text-white z-10">
+                <div class="btn w-[180px] bg-[#ABEF5F] rounded-full flex items-center">
+                    <i class="fa-solid fa-arrow-right-long text-black"></i>
+                    <a class="font-[900] text-base text-black">Rinterio Team</a>                  
+                </div> 
+                <h1 class="text-4xl text-gray-100 font-[900] text-center">Meet Our Expert Team</h1>          
+                <p class="lg:w-3/5 w-4/5 text-sm text-center tracking-wider font-[600] text-gray-100 leading-7">At Rinterio our team is a collective of passionate professionals dedicated to bringing your barn house dreams to life. Each member brings a unique skill set, ensuring that every aspect of your project is handled with expertise and care.
+                </p>   
+                <div class="w-[80%] mt-6 grid lg:grid-cols-4 grid-cols-1 items-center justify-center gap-10">
+                    <div class="flex flex-col items-center justify-center text-center space-y-3">
+                        <img src="assets/member1.png" alt="">
+                        <h2 class="font-bold text-gray-200 text-xl">Architect</h2>
+                        <p class="text-gray-200 text-sm">Modern barn house architects are integrating sustainable materials and energy-efficient designs while maintaining the rustic charm of traditional barns.</p>
+                        <div class="flex items-center justify-center  text-black gap-3">
+                            <a href=""><i class="fa-brands fa-facebook-f bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin-in bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>   
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-3">
+                        <img src="assets/member2.png" alt="">
+                        <h2 class="font-bold text-gray-200 text-xl">Interior Designer</h2>
+                        <p class="text-gray-200 text-sm">Interior designers in barn houses are leaning towards a mix of vintage and contemporary styles.Their work often exudes a cozy, warm ambiance.</p>
+                        <div class="flex items-center justify-center  text-black gap-3">
+                            <a href=""><i class="fa-brands fa-facebook-f bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin-in bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>   
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-3">
+                        <img src="assets/member3.png" alt="">
+                        <h2 class="font-bold text-gray-200 text-xl">Landscape Designer</h2>
+                        <p class="text-gray-200 text-sm">Crafts outdoor spaces that harmonize with the barn house's rustic charm Using native plants and sustainable designs to create seamless indoor-outdoor living areas. </p>
+                        <div class="flex items-center justify-center  text-black gap-3">
+                            <a href=""><i class="fa-brands fa-facebook-f bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin-in bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>   
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-3">
+                        <img src="assets/member4.png" alt="">
+                        <h2 class="font-bold text-gray-200 text-xl">Structural Engineer</h2>
+                        <p class="text-gray-200 text-sm">Structural engineers are focusing on making barn houses more resilient to weather conditions while preserving their traditional appearance.</p>
+                        <div class="flex items-center justify-center  text-black gap-3">
+                            <a href=""><i class="fa-brands fa-facebook-f bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin-in bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram bg-[#ABEF5F] py-1.5 px-2 rounded-full"></i></a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
          
          <!-- Let's discuss project section -->
           <section class="w-full form_bg border-x-8 border-y-8 border-white">
@@ -298,7 +365,7 @@
                             <i class="fa-solid fa-arrow-right-long"></i>
                             <a class="font-extrabold text-base text-[#494949]">Let’s Connect</a>                  
                         </div> 
-                        <h1 class="text-5xl text-black font-[900] mb-6">Let’s Discuss Next Project</h1>          
+                        <h1 class="lg:text-5xl text-4xl text-black font-[900] mb-6">Let’s Discuss Next Project</h1>          
                         <p class="lg:w-4/5 text-base text-center font-[600] text-[#494949]"> We’re thrilled to share details about our upcoming barn house project with our clients. This new venture promises to blend innovative design with timeless rustic elements, tailored to your unique needs. Join us as we discuss how we’ll bring your barn house vision to life with creativity and craftsmanship.<p> 
                         
                         <form action="" class="w-full space-y-6">
